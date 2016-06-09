@@ -1,0 +1,24 @@
+[general]
+accounts = example
+maxsyncaccounts = 1
+
+[Account example]
+remoterepository = example@remote
+localrepository = example@local
+
+[Repository example@remote]
+type = IMAP
+remotehost = source_host
+remoteuser = 
+remotepass = 
+ssl = yes
+maxconnections = 1
+readonly = true
+
+[Repository example@local]
+type = IMAP
+remotehost = destination_host
+remoteuser = 
+remotepass = 
+ssl = yes
+maxconnections = 1
