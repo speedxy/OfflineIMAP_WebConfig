@@ -1,5 +1,7 @@
 <?php
-$config_file = "./offlineimap.config";
+$config_file = __DIR__ . "/config.php";
+if(!file_exists($config_file))
+	$config_file = __DIR__ . "/config.example..php";
 
 function read_config($config) {
 	$output = array();
